@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="log.jpg">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closemenu()"></i>
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                    <a href="#"><li>TECHNOLOGY</li></a>
+                </ul>
+                <button type="button" class="btn">BLOG</button>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        <div class="title">
+            <h1>Serve our clients with commitment and integrity. Deliver effective and efficient solutions with complete transparency by leveraging decades of experience in software engineering and design</h1>
+        </div>
+        <div class="vertical">
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+<script>
+    var show=document.getElementById("nav-links");
+    function showmenu(){
+        show.style.right="0";
+
+    }
+    function closemenu(){
+        show.style.right="-150px"
+    }
+</script>    
+</body>
+</html>
